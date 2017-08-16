@@ -1,0 +1,38 @@
+{
+  "name": "interstellar-soulmates",
+  "version": "1.0.0",
+  "description": "Alien dating app",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangerdak/interstellar-soulmates.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dangerdak/interstellar-soulmates/issues"
+  },
+  "homepage": "https://github.com/dangerdak/interstellar-soulmates#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "env2": "^2.2.0",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "pg": "^7.1.2",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.1",
+    "istanbul": "^0.4.5",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0"
+  }
+}
