@@ -18,5 +18,6 @@ const signUp = (email, hashedPassword, cb) => {
   });
 };
 
+signUp('a@g', 'cool', console.log);
 module.exports = signUp;
 
