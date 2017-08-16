@@ -42,7 +42,7 @@ test('Should be able to get a user by their id', t => {
 test('Should add a new user', t => {
   const newuser = {id: 5, user_id: 5, name: 'Thor', species: null, image_url: null, cns: true, legs: '5', interests: 'interstellar ping-pong' };
   request(app)
-    .post(`/`)
+    .post(`/user/edit`)
     .send(newuser)
     .expect(201)
     .expect('Content-Type', /json/)
