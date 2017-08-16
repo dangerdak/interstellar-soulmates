@@ -38,3 +38,18 @@ test('Should be able to get a user by their id', t => {
       });
   });
 });
+
+test('Should add a new user', t => {
+  const newuser = {id: 5, user_id: 5, name: 'Thor', species: null, image_url: null, cns: true, legs: '5', interests: 'interstellar ping-pong' };
+  request(app)
+    .post(`/`)
+    .send(newuser)
+    .expect(201)
+    .expect('Content-Type', /json/)
+    .end((err, res) => {
+      t.same(res.statusCode, 201, 'Status code is 201');
+      t.error(err, 'No error');
+      t.same(res.body[0].name, 'Thor', 'Should add new user to profiles');
+      t.end();
+    });
+});
