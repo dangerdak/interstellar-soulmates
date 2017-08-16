@@ -8,6 +8,7 @@ test( 'initial test', t=> {
   t.equal(1,1, '1 should equal 1');
   t.end();
 });
+
 test('All routes should return the expected results', t => {
   request(app)
     .get('/users')
@@ -19,6 +20,7 @@ test('All routes should return the expected results', t => {
       t.end();
     });
 });
+
 test('Should be able to get a user by their id', t => {
   const ids = ['1', '2', '3', '4'];
   ids.forEach((id, index) => {
