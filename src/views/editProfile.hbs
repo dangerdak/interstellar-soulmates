@@ -1,18 +1,15 @@
 <main>
   <section>
-    <h2 class="titleh2">Edit your profile</h2>
-    <h3></h3>
-    <h3></h3>
-    <form action="/edit-profile" method="POST">
-      <input id="name" name="name" type="text" placeholder="name" />
-      <input id="profilepic" name="profilepic" placeholder="your picture here" type="url" />
-      <input id="species" name="species" type="text" placeholder="species" />
+    <form action="/save-profile" method="POST">
+      <input id="name" name="name" type="text" placeholder="name" value="{{profile.name}}" />
+      <input id="profilepic" name="image_url" placeholder="your picture here" type="url" value="{{profile.image_url}}"/>
+      <input id="species" name="species" type="text" placeholder="species" value="{{profile.species}}"/>
       <select id="cns" name="cns">
         <option value="true">True</option>
         <option value="false">False</option>
       </select>
-      <input id="legs" name="legs" type="number" placeholder="legs" />
-      <input id="interests" name="interests" type="text" placeholder="interests" />
+      <input id="legs" name="legs" type="number" placeholder="legs" value="{{profile.legs}}"/>
+      <input id="interests" name="interests" type="text" placeholder="interests" value="{{profile.interests}}"/>
 
       <button type="submit" name="button" value="save">Save</button>
       <button type="submit" name="button" value="signOut">Sign Out</button>

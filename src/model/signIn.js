@@ -14,5 +14,5 @@ const signIn = (email, cb) => {
   });
 };
 
-signIn('x@g', console.log);
+// signIn('x@g', console.log);
 module.exports = signIn;
