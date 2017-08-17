@@ -38,6 +38,7 @@ footer {
 button {
   border-radius: 50%;
   padding: 10px;
+  max-width: 200px;
 }
 
 section,
@@ -128,13 +129,9 @@ footer {
   padding: 5px;
   font-size: 22px;
 }
+
 .selectTags > select {
   border: solid 3px;
-}
-
-.singlesLink {
-  text-align: center;
-  cursor: pointer;
 }
 
 /* SINGLES */
