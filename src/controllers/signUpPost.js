@@ -10,10 +10,11 @@ module.exports = (req, res) => {
       res.status(400).send(errors[400]);
   }
   else {
-    signUp(req.body.email, hashedPassword, (err) => {
+    signUp(req.body.email, hashedPassword, (err, response) => {
       if (err) {
         res.status(500).send(errors[500]);
       } else {
+        req.session.userId = response.rows[0].user_id;
         res.redirect('/edit-profile');
       }
     });
