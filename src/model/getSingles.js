@@ -11,5 +11,5 @@ const getSingles = (cb) => {
   });
 };
 
-getSingles(console.log);
+// getSingles(console.log);
 module.exports = getSingles;
