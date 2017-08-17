@@ -6,7 +6,7 @@ const path = require('path');
 const controllers = require('./controllers/index');
 const helpers = require('./views/helpers/index');
 const bodyParser = require('body-parser');
-
+const session = require('express-session');
 const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
@@ -22,6 +22,7 @@ app.engine('hbs', exphbs({
 
 app.set('port', process.env.PORT || 4001);
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(session({ secret: 'keyboard cat', resave: false, saveUninitialized: true, cookie: { maxAge: 60000 }}));
 app.use(controllers);
 
 module.exports = app;
