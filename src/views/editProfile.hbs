@@ -1,16 +1,27 @@
 <main>
   <section>
     <form action="/save-profile" method="POST">
+      <label for="name">Name:
       <input id="name" name="name" type="text" placeholder="name" value="{{profile.name}}" />
-      <input id="profilepic" name="image_url" placeholder="your picture here" type="url" value="{{profile.image_url}}"/>
-      <input id="species" name="species" type="text" placeholder="species" value="{{profile.species}}"/>
-      <select id="cns" name="cns">
-        <option value="true">True</option>
-        <option value="false">False</option>
-      </select>
-      <input id="legs" name="legs" type="number" placeholder="legs" value="{{profile.legs}}"/>
-      <input id="interests" name="interests" type="text" placeholder="interests" value="{{profile.interests}}"/>
-
+    </label>
+      <label for="image_url">Image URL:
+      <input id="image_url" name="image_url" placeholder="your picture here" type="url" value="{{profile.image_url}}" />
+    </label>
+      <label for="species">Species:
+      <input id="species" name="species" type="text" placeholder="species" value="{{profile.species}}" />
+    </label>
+      <label for="cns" class="selectTags">Central Nervous System: 
+        <select id="cns" name="cns">
+          <option value="true">True</option>
+          <option value="false">False</option>
+         </select>
+    </label>
+    <label for="legs">Legs: 
+      <input id="legs" name="legs" type="number" placeholder="legs" value="{{profile.legs}}" />
+    </label>
+    <label for="interests">Interests: 
+      <input id="interests" name="interests" type="text" placeholder="interests" value="{{profile.interests}}" />
+    </label>
       <button type="submit" name="button" value="save">Save</button>
       <button type="submit" name="button" value="signOut">Sign Out</button>
     </form>

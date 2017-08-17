@@ -1,0 +1,113 @@
+/* GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: "Carrois Gothic SC", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: white;
+}
+
+input,
+button,
+label,
+.profileSection > p,
+footer {
+  font-size: 22px;
+  background-color: lightpink;
+  padding: 5px;
+  width: 100%;
+}
+
+input {
+  border: solid 1px white;
+}
+
+button,
+footer {
+  border: solid 3px white;
+}
+
+button {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+section,
+form,
+ul,
+li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  padding: 0;
+}
+
+form > * {
+  margin: 10px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* heart from: https://css-tricks.com/hearts-in-html-and-css/ */
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+
+/* EDIT PROFILE */
+/* TODO: wrap text in input field if poss */
+.selectTags,
+.selectTags > select {
+  background-color: lightpink;
+  padding: 5px;
+  font-size: 22px;
+}
+.selectTags > select {
+  border: solid 3px;
+}
+
+/* SINGLES */
+.singlesSection img {
+  max-width: 90%;
+}
