@@ -1,8 +1,8 @@
 const getProfile = require("../model/getProfile");
 
 module.exports = (req, res) => {
-  //TODO: get user id from cookie and pass to getProfile
-  getProfile(user_id, (err, profile) => {
+  //TODO: change hardcoded user_id (1) to user_id taken from cookie
+  getProfile(1, (err, profile) => {
     if (err) {
       res.status(500).send(errors[500]);
     } else if (profile == undefined) {
