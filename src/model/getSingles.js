@@ -5,9 +5,6 @@ const getSingles = (cb) => {
   dbConnection.query(sqlGetSingles, (err, res) => {
     if (err) {
       cb(err);
-    } else if (!res.rows[0]) {
-      // TODO could create a custom error
-      cb(null, '');
     } else {
       cb(null, res.rows);
     }

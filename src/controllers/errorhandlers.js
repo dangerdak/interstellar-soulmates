@@ -1,10 +1,9 @@
-
+const msg = require('../dictionary/errorMessages');
 
 exports.client = (req, res) => {
-  res.send("404: Not Found");
-
+  res.status(404).send(msg[404]);
 };
 
 exports.server = (err, req, res, next) => {
-  res.send("500: Sorry, we've had a problem on our end")
+  res.status(500).send(msg[500]);
 };
