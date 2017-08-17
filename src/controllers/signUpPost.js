@@ -12,7 +12,7 @@ module.exports = (req, res) => {
   else {
     signUp(req.body.email, hashedPassword, (err, response) => {
       if (err) {
-        console.log("the error is here");
+      
         res.status(500).send(errors[500]);
       } else {
         req.session.userId = response.rows[0].user_id;

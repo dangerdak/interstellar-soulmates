@@ -1,4 +1,11 @@
+const errors = require('../dictionary/errorMessages');
+
 module.exports = (req, res) => {
-  console.log("editprofile handler", req.session);
-  res.render('editProfile', { pageTitle: 'Edit your profile' });
+  if (req.session.userId) {
+    res.render('editProfile', {
+      pageTitle: 'Edit your profile'
+    });
+  } else {
+    res.status(401).send(errors[401]);
+  }
 };
