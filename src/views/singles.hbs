@@ -1,4 +1,10 @@
 <section>
-<img src="#" alt="profile picture">
-<h3>name</h3>
+    <ul>
+    {{#each singles}}
+    <li>
+<img src="{{this.image_url}}" alt="profile picture for {{this.name}}">
+<h3>{{this.name}}</h3>
+    </li>
+    {{/each}}
+    </ul>
 </section>
