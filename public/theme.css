@@ -1,11 +1,11 @@
 /* GENERAL */
 * {
   box-sizing: border-box;
+  font-family: "Carrois Gothic SC", sans-serif;
 }
 
 body {
   background-color: black;
-  font-family: "Carrois Gothic SC", sans-serif;
 }
 
 h1,
@@ -19,7 +19,7 @@ input,
 button,
 label,
 .profileSection > p,
-footer, .singlesLink {
+footer, .navItem {
   font-size: 22px;
   background-color: lightpink;
   padding: 5px;
@@ -43,10 +43,21 @@ button {
 section,
 form,
 ul,
+li, nav {
+  display: flex;
+}
+
+section,
+form,
+ul,
 li {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+nav {
+  justify-content: space-around;
 }
 
 ul {
@@ -54,6 +65,20 @@ ul {
 }
 
 form > * {
+  margin: 10px;
+}
+
+/* NAVBAR */
+nav > a, nav button {
+  border-radius: 0;
+  max-width: 120px;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav > a, nav  {
   margin: 10px;
 }
 
