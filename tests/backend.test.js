@@ -9,6 +9,19 @@ test( 'initial test', t=> {
   t.end();
 });
 
+test('Singles route', t => {
+  request(app)
+    .get('/singles')
+    .expect(200)
+    .expect('Content-Type', /text\/html/)
+    .end((err, res) => {
+      t.equal(res.statusCode, 200, 'Status code is 200');
+      t.error(err, 'No error');
+      t.ok(res.text.includes('Singles'), 'Singles route contains \'Singles\' text');
+      t.end();
+    });
+});
+
 test('All routes should return the expected results', t => {
   request(app)
     .get('/users')
