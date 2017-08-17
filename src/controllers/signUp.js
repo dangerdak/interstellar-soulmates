@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-  res.render('signUp');
+  res.render('signUp', { pageTitle: 'Sign Up'});
 };
