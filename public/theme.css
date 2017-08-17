@@ -19,14 +19,14 @@ input,
 button,
 label,
 .profileSection > p,
-footer {
+footer, .singlesLink {
   font-size: 22px;
   background-color: lightpink;
   padding: 5px;
   width: 100%;
 }
 
-input {
+input, .singlesLink {
   border: solid 1px white;
 }
 
@@ -105,6 +105,11 @@ footer {
 }
 .selectTags > select {
   border: solid 3px;
+}
+
+.singlesLink {
+  text-align: center;
+  cursor: pointer;
 }
 
 /* SINGLES */

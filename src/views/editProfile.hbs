@@ -1,4 +1,5 @@
 <main>
+  {{>signOut}}
   <section>
     <form action="/save-profile" method="POST">
       <label for="name">Name:
@@ -23,7 +24,8 @@
       <input id="interests" name="interests" type="text" placeholder="interests" value="{{profile.interests}}" />
     </label>
       <button type="submit" name="button" value="save">Save</button>
-      <button type="submit" name="button" value="signOut">Sign Out</button>
-    </form>
+      </form>
+      <a class="singlesLink">View Singles</a>
+
   </section>
 </main>
