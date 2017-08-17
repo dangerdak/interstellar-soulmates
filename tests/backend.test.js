@@ -4,9 +4,17 @@ const request = require('supertest');
 
 const app = require('../src/app');
 
-test( 'initial test', t=> {
-  t.equal(1,1, '1 should equal 1');
-  t.end();
+test('Home route', t => {
+  request(app)
+    .get('/')
+    .expect(200)
+    .expect('Content-Type', /text\/html/)
+    .end((err, res) => {
+      t.equal(res.statusCode, 200, 'Status code is 200');
+      t.error(err, 'No error');
+      t.ok(res.text.includes('Sign In'), 'Home route responds with page containing \'Sign In\' text');
+      t.end();
+    });
 });
 
 test('All routes should return the expected results', t => {
