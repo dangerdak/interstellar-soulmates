@@ -5,9 +5,9 @@ const path = require('path');
 
 const controllers = require('./controllers/index');
 const helpers = require('./views/helpers/index');
+const bodyParser = require('body-parser');
 
 const app = express();
-
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -21,6 +21,7 @@ app.engine('hbs', exphbs({
 );
 
 app.set('port', process.env.PORT || 4001);
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(controllers);
 
 module.exports = app;
