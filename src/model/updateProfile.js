@@ -11,22 +11,22 @@ const updateProfile = (userData, userId, cb) => {
   });
 };
 
-updateProfile({
-  name: 'zorg',
-  species: 'zaba',
-  legs: 6,
-  cns: true,
-  image_url: 'http://r.hswstatic.com/w_404/gif/alien-cuisine-quiz-orig.jpg',
-  interests: 'shopping',
-}, 1, console.log);
+// updateProfile({
+//   name: 'zorg',
+//   species: 'zaba',
+//   legs: 6,
+//   cns: true,
+//   image_url: 'http://r.hswstatic.com/w_404/gif/alien-cuisine-quiz-orig.jpg',
+//   interests: 'shopping',
+// }, 1, console.log);
 
-updateProfile({
-  name: 'worf',
-  species: 'Klingon',
-  legs: 2,
-  cns: true,
-  image_url: 'https://upload.wikimedia.org/wikipedia/en/e/ed/WorfTNG.jpg',
-  interests: 'fighting',
-}, 2, console.log);
+// updateProfile({
+//   name: 'worf',
+//   species: 'Klingon',
+//   legs: 2,
+//   cns: true,
+//   image_url: 'https://upload.wikimedia.org/wikipedia/en/e/ed/WorfTNG.jpg',
+//   interests: 'fighting',
+// }, 2, console.log);
 
 module.exports = updateProfile;

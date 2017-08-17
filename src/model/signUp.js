@@ -21,6 +21,14 @@ const signUp = (email, hashedPassword, cb) => {
   });
 };
 
+<<<<<<< HEAD
 //signUp('a@g', 'cool', console.log);
 //signUp('worf@enterprise', 'brave', console.log);
+||||||| merged common ancestors
+signUp('a@g', 'cool', console.log);
+signUp('worf@enterprise', 'brave', console.log);
+=======
+// signUp('a@g', 'cool', console.log);
+// signUp('worf@enterprise', 'brave', console.log);
+>>>>>>> master
 module.exports = signUp;
