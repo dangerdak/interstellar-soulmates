@@ -1,7 +1,7 @@
 const dbConnection = require('./db/dbConnection');
 
 const getSingles = (cb) => {
-  const sqlGetSingles = `SELECT image_url, name FROM profiles;`;
+  const sqlGetSingles = `SELECT image_url, name, user_id FROM profiles;`;
   dbConnection.query(sqlGetSingles, (err, res) => {
     if (err) {
       cb(err);

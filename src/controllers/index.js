@@ -11,7 +11,7 @@ const errors = require('./errorhandlers');
 
 router.get('/', home);
 router.get('/singles', singles);
-router.get('/profile/:name', getProfile);
+router.get('/profile/:user_id', getProfile);
 router.get('/sign-up', signUp);
 router.get('/edit-profile', editProfile);
 
