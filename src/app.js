@@ -23,6 +23,7 @@ app.engine('hbs', exphbs({
 
 app.set('port', process.env.PORT || 4001);
 app.use(bodyparser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(controllers);
 
 module.exports = app;
