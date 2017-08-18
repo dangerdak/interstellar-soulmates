@@ -1,10 +1,10 @@
 {{>navbar}}
 <section class="singlesSection">
-    <ul>
+    <ul class= "ulsingles">
         {{#each singles}}
         <li>
           <a href="/profile/{{this.user_id}}">
-            <img src="{{this.image_url}}" alt="profile picture for {{this.name}}">
+            <img src="{{this.image_url}}" class="image" alt="profile picture for {{this.name}}">
 
                 <h3>{{this.name}}</h3>
             </a>
