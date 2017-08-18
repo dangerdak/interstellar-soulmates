@@ -8,5 +8,5 @@ before_script:
 install:
   - npm install -g codecov
 script:
-  - istanbul cover ./node_modules/mocha/bin/tape --reporter lcovonly -- -R spec
+  - istanbul cover ./node_modules/tape/bin/tape --reporter lcovonly -- -R spec
   - codecov
