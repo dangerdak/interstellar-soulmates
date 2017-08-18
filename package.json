@@ -9,7 +9,8 @@
   "scripts": {
     "test": "tape tests/backend.test.js | tap-spec",
     "start": "node src/index.js",
-    "devStart": "nodemon src/index.js"
+    "devStart": "nodemon src/index.js",
+    "coverage": "./node_modules/.bin/istanbul cover tape ./tests/*.js"
   },
   "repository": {
     "type": "git",
