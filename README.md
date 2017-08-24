@@ -1,14 +1,6 @@
 # interstellar-soulmates [![Build Status](https://travis-ci.org/dangerdak/interstellar-soulmates.svg?branch=master)](https://travis-ci.org/dangerdak/interstellar-soulmates) ![Coverage](https://codecov.io/gh/dangerdak/interstellar-soulmates/branch/master/graphs/badge.svg?precision=0)
 It's a lonely universe out there.
 
-# Background
-This app was originally built as a 1.5 day sprint with @dangerdak and @polyccon, as part of week 8 of the [Founders and Coders bootcamp](https://foundersandcoders.com/) during which we were learning the express framework amongst other things.
-I made this fork of the app in order to continue playing with it and improving it. In particular I aim to:
-
-- [ ] fix buggy authorisation with express-session.
-
-- [ ] improve test coverage.
-
 ## Why
 Dating is hard for aliens.
 
